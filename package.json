@@ -1,0 +1,23 @@
+{
+  "name": "fyziork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss-cli build -i src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalkvr/fyziork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalkvr/fyziork/issues"
+  },
+  "homepage": "https://github.com/michalkvr/fyziork#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
