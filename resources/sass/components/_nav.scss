@@ -1,0 +1,19 @@
+.nav {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: $font-mulish;
+  gap: 5em;
+  
+  &__item {
+    letter-spacing: .15rem;
+    font-size: 1.7rem;
+    padding: .7rem 0;
+    border-bottom: 2px solid $color-primary;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      border-bottom-color: white;
+    }
+  }
+}

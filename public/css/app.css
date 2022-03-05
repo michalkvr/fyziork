@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Mulish:wght@300;500;700&family=Nothing+You+Could+Do&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  cursor: pointer; }
+
+:root {
+  font-size: 62.5%; }
+  :root body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0; }
+    :root body.main-menu-open {
+      overflow: hidden; }
+      :root body.main-menu-open main, :root body.main-menu-open .footer {
+        filter: blur(10px); }
+    @media (min-width: breakpoint-min("md", (xs: 0, s: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px, desktop: 1650px, fullHD: 1920px))) {
+      :root body {
+        font-size: 1.4rem; } }
+    @media (min-width: breakpoint-min("xl", (xs: 0, s: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px, desktop: 1650px, fullHD: 1920px))) {
+      :root body {
+        font-size: 1.6rem; } }
+
+main, .footer {
+  overflow: hidden;
+  transition: filter .5s linear; }
+
+.container {
+  margin: auto;
+  max-width: 108.8rem;
+  position: relative;
+  width: 100%;
+  z-index: 10; }
+  @media (min-width: breakpoint-min(xxl, (xs: 0, s: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px, desktop: 1650px, fullHD: 1920px))) {
+    .container--xl {
+      max-width: 128rem; } }
+  @media (min-width: breakpoint-min(fullHD, (xs: 0, s: 480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px, desktop: 1650px, fullHD: 1920px))) {
+    .container--xl {
+      max-width: 160rem; } }
+
+.button {
+  border-radius: 1rem;
+  border: 3px solid #81D3AD;
+  padding: 2rem 4rem;
+  transition: all .1s ease;
+  font-size: 2rem; }
+  .button--primary {
+    color: white;
+    background-color: #81D3AD; }
+  .button--secondary {
+    color: #81D3AD; }
+  .button:hover {
+    transform: scale(105%); }
+
+.section {
+  padding: 4rem; }
+  .section--primary {
+    background-color: #81D3AD;
+    color: white; }
+
+.header {
+  align-items: center;
+  background-color: #81D3AD;
+  box-sizing: border-box;
+  display: flex;
+  height: 8rem;
+  justify-content: space-between;
+  padding: 0 5rem;
+  position: fixed;
+  width: 100%; }
+  .header__logo {
+    color: white;
+    font-size: 4rem;
+    font-family: "Nothing You Could Do", cursive; }
+
+.nav {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "Mulish", sans-serif;
+  gap: 5em; }
+  .nav__item {
+    letter-spacing: .15rem;
+    font-size: 1.7rem;
+    padding: .7rem 0;
+    border-bottom: 2px solid #81D3AD;
+    transition: all .2s ease-in-out; }
+    .nav__item:hover {
+      border-bottom-color: white; }
+
+.hero {
+  height: 97vh;
+  display: flex;
+  align-items: center; }
+  .hero__image {
+    width: 50%; }
+  .hero__content {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column; }
+  .hero__heading {
+    display: flex;
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+    line-height: 1.2; }
+  .hero__title {
+    font-size: 6rem;
+    margin-left: .2rem; }
+  .hero__name {
+    font-size: 9rem; }
+  .hero__buttons {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem; }

@@ -1,0 +1,83 @@
+:root {
+  font-size: 62.5%;
+
+  body {
+    font-family: $font-josefin;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0;
+
+    &.main-menu-open {
+      overflow: hidden;
+
+      main, .footer {
+        filter: blur(10px);
+      }
+    }
+
+    @include media-breakpoint-up('md') {
+      font-size: 1.4rem;
+    }
+
+    @include media-breakpoint-up('xl') {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+main, .footer {
+  overflow: hidden;
+  transition: filter .5s linear;
+}
+
+.container {
+  margin: auto;
+  max-width: 108.8rem;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  @include media-breakpoint-up(xxl) {
+
+    &--xl {
+      max-width: 128rem;
+    }
+  }
+
+  @include media-breakpoint-up(fullHD) {
+
+    &--xl {
+      max-width: 160rem;
+    }
+  }
+}
+
+.button {
+  border-radius: 1rem;
+  border: 3px solid $color-primary;
+  padding: 2rem 4rem;
+  transition: all .1s ease; 
+  font-size: 2rem;
+
+  &--primary {
+    color: white;
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    color: $color-primary;
+  }
+
+  &:hover {
+    transform: scale(105%);
+  }
+}
+
+.section {
+  padding: 4rem;
+
+  &--primary {
+    background-color: $color-primary;
+    color: white;
+  }
+}

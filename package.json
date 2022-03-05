@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss-cli build -i src/styles.css -o public/styles.css"
+    "build-css": "node-sass resources/sass/main.scss public/css/app.css",
+    "watch-css": "node-sass --watch resources/sass/main.scss public/css/app.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/michalkvr/fyziork#readme",
   "dependencies": {
-    "tailwindcss": "^3.0.23"
+    "node-sass": "^7.0.1"
   }
 }

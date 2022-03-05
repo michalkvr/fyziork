@@ -1,0 +1,22 @@
+@mixin border-radius {
+  border-radius: .3rem;
+
+  @include media-breakpoint-up('xxl') {
+    border-radius: .4rem;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 .2vw 1.5vw map-get($colors, 'codGray');
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
