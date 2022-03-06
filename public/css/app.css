@@ -153,8 +153,8 @@ button {
 :root {
   font-size: 62.5%; }
   :root body {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.6rem;
     line-height: 1.8;
     margin: 0; }
     :root body.main-menu-open {
@@ -188,9 +188,9 @@ main, .footer {
 .button {
   border-radius: 1rem;
   border: 3px solid #81D3AD;
+  font-size: 2rem;
   padding: 2rem 4rem;
-  transition: all .1s ease;
-  font-size: 2rem; }
+  transition: all .1s ease; }
   .button--primary {
     color: white;
     background-color: #81D3AD; }
@@ -200,25 +200,39 @@ main, .footer {
     transform: scale(105%); }
 
 .section {
-  padding: 4rem; }
+  padding: 7rem 4rem 4rem;
+  text-align: center; }
+  .section__title {
+    font-size: 5rem; }
   .section--primary {
     background-color: #81D3AD;
+    color: white; }
+  @media (min-width: 768px) {
+    .section {
+      text-align: left; } }
+
+.swiper {
+  height: auto;
+  width: 100%; }
+  .swiper .swiper-button-prev, .swiper .swiper-button-next {
     color: white; }
 
 .header {
   align-items: center;
   background-color: #81D3AD;
+  border-bottom: 2px solid white;
   box-sizing: border-box;
   display: flex;
   height: 8rem;
   justify-content: space-between;
   padding: 0 5rem;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   .header__logo {
     color: white;
-    font-size: 4rem;
-    font-family: "Nothing You Could Do", cursive; }
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 4rem; }
 
 .nav {
   color: white;
@@ -260,3 +274,38 @@ main, .footer {
     margin-top: 4rem;
     display: flex;
     gap: 1rem; }
+
+.footer {
+  align-items: center;
+  background-color: #81D3AD;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.4rem;
+  font-weight: medium;
+  height: 6rem;
+  justify-content: space-between;
+  letter-spacing: .05rem;
+  padding: 0 5rem; }
+
+.about-snippet {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr; }
+  .about-snippet__content {
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    padding: 3rem;
+    text-align: left; }
+  .about-snippet__image {
+    border-radius: 1rem;
+    margin: auto; }
+  @media (min-width: 768px) {
+    .about-snippet {
+      gap: 1rem;
+      grid-template-columns: 2fr auto; } }
+  @media (min-width: 992px) {
+    .about-snippet__content {
+      padding: 6rem; } }

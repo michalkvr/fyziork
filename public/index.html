@@ -1,41 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="css/app.css">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-</head>
-<body>
-  <header class="header">
-    <a href="./" class="header__logo">fyzioRK</a>
-    <nav class="nav">
-      <button class="nav__item">o mně</button>
-      <button class="nav__item">služby</button>
-      <button class="nav__item">reference</button>
-      <button class="nav__item">kontakt</button>
-    </nav>
-  </header> 
-  <main>
-    <section class="hero">
-      <lottie-player class="hero__image" src="https://assets5.lottiefiles.com/packages/lf20_3Gx2hS.json" background="transparent"  speed="1" loop autoplay></lottie-player>
-      <div class="hero__content">
-        <h1 class="hero__heading">
-          <span class="hero__title">fyzioterapie</span>
-          <span class="hero__name">Roman Kovář</span>
-        </h1>
-        <div class="hero__buttons">
-          <button class="button button--primary">s čím vám pomohu</button>
-          <button class="button button--secondary">napište mi</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyzioterapie - Roman Kovář</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="icon.ico" type="image/icon type" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./" class="header__logo">fyzioRK</a>
+      <nav class="nav">
+        <button class="nav__item">o mně</button>
+        <button class="nav__item">služby</button>
+        <button class="nav__item">reference</button>
+        <button class="nav__item">kontakt</button>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <lottie-player
+          class="hero__image"
+          src="https://assets5.lottiefiles.com/packages/lf20_3Gx2hS.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            <span class="hero__title">fyzioterapie</span>
+            <span class="hero__name">Roman Kovář</span>
+          </h1>
+          <div class="hero__buttons">
+            <button class="button button--primary">s čím vám pomohu</button>
+            <button class="button button--secondary">napište mi</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section section--primary">
-      <h2 class="section__title">Kdo jsem?</h2>
-    </section>
-  </main>
+      </section>
+      <!-- END HERO -->
 
-</body>
+      <!-- O MNĚ -->
+      <section class="section section--primary">
+        <div class="container">
+          <h2 class="section__title">Kdo jsem?</h2>
+          <div class="about-snippet">
+            <div class="about-snippet__content">
+              “Jak jste se k tomu dostal?” Zeptal se mě včera jeden z mých
+              pacientů. Dnes již tomu tak není, ale jedním z mých mladistvých
+              cílů bylo stát se úspěšným sportovcem, v mém případě fotbalistou.
+              Nicméně, krátce po tom, co jsem se dostal dorosteneckého věku,
+              začal jsem laborovat s různými funkčními problémy. Jednou bolest
+              zad, podruhé distenze přitahovače, ohybače a já nevím co ještě…
+              Problémy se táhly roky a vyústily v operační řešení.
+            </div>
+            <img class="about-snippet__image" src="img/img1.png" alt="" />
+          </div>
+          <h2 class="section__title">Jaké mám zkušenosti?</h2>
+          <div class="about-snippet about-snippet--reversed">
+            <div class="about-snippet__content">
+              “Jak jste se k tomu dostal?” Zeptal se mě včera jeden z mých
+              pacientů. Dnes již tomu tak není, ale jedním z mých mladistvých
+              cílů bylo stát se úspěšným sportovcem, v mém případě fotbalistou.
+              Nicméně, krátce po tom, co jsem se dostal dorosteneckého věku,
+              začal jsem laborovat s různými funkčními problémy. Jednou bolest
+              zad, podruhé distenze přitahovače, ohybače a já nevím co ještě…
+              Problémy se táhly roky a vyústily v operační řešení.
+            </div>
+            <img class="about-snippet__image" src="img/img1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- END O MNĚ -->
+
+      <!-- GALERIE -->
+      <!-- Slider main container -->
+      <section class="swiper section section--primary">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img src="img/slider/slider_01.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_02.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_03.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_04.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_05.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_06.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_07.jpg" class="swiper-slide"/>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <!-- END GALERIE -->
+
+      <!-- SLUŽBY -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">S čím vám dokáži pomoci</h2>
+        </div>
+      </section>
+      <!-- END SLUŽBY -->
+
+      <!-- REFERENCE -->
+      <section class="section section--primary">
+        <div class="container">
+          <h2 class="section__title">Reference</h2>
+        </div>
+      </section>
+      <!-- END REFERENCE -->
+
+      <!-- KONTAKT -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Napište mi</h2>
+        </div>
+      </section>
+      <!-- END KONTAKT -->
+    </main>
+
+    <footer class="footer">
+      <span>Fyzioterapie - Roman Kovář</span>
+      <span>Website by Michal Kovář</span>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
 </html>

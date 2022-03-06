@@ -1,0 +1,14 @@
+.footer {
+  align-items: center;
+  background-color: $color-primary;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: $font-mulish;
+  font-size: 1.4rem;
+  font-weight: medium;
+  height: 6rem;
+  justify-content: space-between;
+  letter-spacing: .05rem;
+  padding: 0 5rem;
+}

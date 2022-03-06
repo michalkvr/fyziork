@@ -1,0 +1,30 @@
+.about-snippet {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+
+  &__content {
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    padding: 3rem;
+    text-align: left;
+  }
+
+  &__image {
+    border-radius: 1rem;
+    margin: auto;
+    
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    gap: 1rem;
+    grid-template-columns: 2fr auto;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    &__content {
+      padding: 6rem;
+    }
+  }
+}
