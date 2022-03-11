@@ -13,12 +13,13 @@
 
   &__image {
     border-radius: 1rem;
+    height: 50rem;  
     margin: auto;
     
   }
 
   @media (min-width: map-get($grid-breakpoints, 'md')) {
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: 2fr auto;
   }
 

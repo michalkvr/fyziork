@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fyzioterapie - Roman Kovář</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="icon" href="icon.ico" type="image/icon type" />
@@ -25,7 +32,7 @@
       <section class="hero">
         <lottie-player
           class="hero__image"
-          src="https://assets5.lottiefiles.com/packages/lf20_3Gx2hS.json"
+          src="img/hero.json"
           background="transparent"
           speed="1"
           loop
@@ -58,20 +65,18 @@
               zad, podruhé distenze přitahovače, ohybače a já nevím co ještě…
               Problémy se táhly roky a vyústily v operační řešení.
             </div>
-            <img class="about-snippet__image" src="img/img1.png" alt="" />
+            <img class="about-snippet__image" src="img/img_01.png" alt="" />
           </div>
           <h2 class="section__title">Jaké mám zkušenosti?</h2>
           <div class="about-snippet about-snippet--reversed">
             <div class="about-snippet__content">
-              “Jak jste se k tomu dostal?” Zeptal se mě včera jeden z mých
-              pacientů. Dnes již tomu tak není, ale jedním z mých mladistvých
-              cílů bylo stát se úspěšným sportovcem, v mém případě fotbalistou.
-              Nicméně, krátce po tom, co jsem se dostal dorosteneckého věku,
-              začal jsem laborovat s různými funkčními problémy. Jednou bolest
-              zad, podruhé distenze přitahovače, ohybače a já nevím co ještě…
-              Problémy se táhly roky a vyústily v operační řešení.
+              V posledním ročníku gymnázia přišel čas, kdy jsem se musel
+              rozhodnout kam dál. Potíže neustávaly, a tak jsem si řekl, že tomu
+              i já chci rozumět. Po chvíli setrvání se mi podařilo nastoupit do
+              bakalářského prezenčního programu oboru fyzioterapie v Plzni.
+              Tímto se odstartovala má profesní cesta!
             </div>
-            <img class="about-snippet__image" src="img/img1.png" alt="" />
+            <img class="about-snippet__image" src="img/img_02.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -79,17 +84,16 @@
 
       <!-- GALERIE -->
       <!-- Slider main container -->
-      <section class="swiper section section--primary">
+      <section class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <img src="img/slider/slider_01.jpg" class="swiper-slide"/>
-          <img src="img/slider/slider_02.jpg" class="swiper-slide"/>
-          <img src="img/slider/slider_03.jpg" class="swiper-slide"/>
-          <img src="img/slider/slider_04.jpg" class="swiper-slide"/>
-          <img src="img/slider/slider_05.jpg" class="swiper-slide"/>
-          <img src="img/slider/slider_06.jpg" class="swiper-slide"/>
-          <img src="img/slider/slider_07.jpg" class="swiper-slide"/>
+          <img src="img/slider/slider_01.jpg" class="swiper-slide" />
+          <img src="img/slider/slider_02.jpg" class="swiper-slide" />
+          <img src="img/slider/slider_03.jpg" class="swiper-slide" />
+          <img src="img/slider/slider_04.jpg" class="swiper-slide" />
+          <img src="img/slider/slider_05.jpg" class="swiper-slide" />
+          <img src="img/slider/slider_06.jpg" class="swiper-slide" />
         </div>
 
         <!-- If we need navigation buttons -->
@@ -102,24 +106,64 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">S čím vám dokáži pomoci</h2>
+          <div class="services">
+            <article class="services__tile">
+              <i class="services__icon fa-solid fa-face-sad-tear"></i>
+              <span>Bolesti zad a kloubů</span>
+            </article>
+            <article class="services__tile">
+              <i class="services__icon fa-solid fa-fire"></i>
+              <span>Akutní blokády</span>
+            </article>
+            <article class="services__tile">
+              <i class="services__icon fa-solid fa-bone"></i>
+              <span>Poúrazové a pooperační stavy</span>
+            </article>
+            <article class="services__tile">
+              <i class="services__icon fa-solid fa-bone fa-people-carry-box"></i>
+              <span>Vadné držení těla</span>
+            </article>
+            <article class="services__tile">
+              <i class="services__icon fa-solid fa-person-biking"></i>
+              <span>Přetížení svalů a šlach</span>
+            </article>
+            <article class="services__tile">
+              <i class="services__icon fa-solid fa-volleyball"></i>
+              <span>Sportovní fyzioterapie</span>
+            </article>
+          </div>
         </div>
       </section>
       <!-- END SLUŽBY -->
 
       <!-- REFERENCE -->
-      <section class="section section--primary">
+      <!-- <section class="section section--primary">
         <div class="container">
           <h2 class="section__title">Reference</h2>
         </div>
-      </section>
+      </section> -->
       <!-- END REFERENCE -->
 
       <!-- KONTAKT -->
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title">Napište mi</h2>
+      <section class="section--primary contact">
+        <div class="contact__info">
+          <span class="contact__name">Bc. Roman Kovář</span>
+          <a href="tel:+420607860710"><i class="contact__icon fa-solid fa-phone"></i>607 860 710</a>
+          <a href="mailto:romankovar@fyziork.cz"><i class="contact__icon fa-solid fa-envelope"></i></i>romankovar@fyziork.cz</a>
+          <a href="https://www.google.com/maps/place/Blatensk%C3%A1+311,+341+01+Hora%C5%BE%C4%8Fovice/@49.3218839,13.7036642,17z/data=!4m13!1m7!3m6!1s0x470b2e33ca6b78d9:0x23494905a04a3a2a!2zQmxhdGVuc2vDoSAzMTEsIDM0MSAwMSBIb3Jhxb7Ej292aWNl!3b1!8m2!3d49.3218839!4d13.7058529!3m4!1s0x470b2e33ca6b78d9:0x23494905a04a3a2a!8m2!3d49.3218839!4d13.7058529" target="_blank">
+            <i class="contact__icon fa-solid fa-location-dot"></i>
+            Blatenská 311, 34101 Horažďovice
+          </a>
         </div>
-      </section>
+        <div class="contact__map">
+          <iframe
+            height="100%"
+            width="100%"
+            frameborder="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Blatensk%C3%A1%20311,%20Hora%C5%BE%C4%8Fovice+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="https://www.gps.ie/truck-gps/">transport gps</a></iframe
+          >
+        </div>
       <!-- END KONTAKT -->
     </main>
 

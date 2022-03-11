@@ -1,0 +1,38 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  height: 50rem;
+
+  &__name {
+    font-size: 5rem;
+  }
+
+  &__info {
+    text-align: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+  
+    & > a {
+      border-bottom: 2px solid $color-primary;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        border-bottom-color: white;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 1.2rem;
+  }
+
+  &__map {
+    width: 100%;
+  }
+}
