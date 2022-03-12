@@ -158,20 +158,6 @@ button {
     font-size: 1.6rem;
     line-height: 1.8;
     margin: 0; }
-    :root body.main-menu-open {
-      overflow: hidden; }
-      :root body.main-menu-open main, :root body.main-menu-open .footer {
-        filter: blur(10px); }
-    @media (min-width: breakpoint-min("md", (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px))) {
-      :root body {
-        font-size: 1.4rem; } }
-    @media (min-width: breakpoint-min("xl", (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px))) {
-      :root body {
-        font-size: 1.6rem; } }
-
-main, .footer {
-  overflow: hidden;
-  transition: filter .5s linear; }
 
 .container {
   margin: auto;
@@ -179,12 +165,6 @@ main, .footer {
   position: relative;
   width: 100%;
   z-index: 10; }
-  @media (min-width: breakpoint-min(xxl, (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px))) {
-    .container--xl {
-      max-width: 128rem; } }
-  @media (min-width: breakpoint-min(fullHD, (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1366px))) {
-    .container--xl {
-      max-width: 160rem; } }
 
 .button {
   border-radius: 1rem;
@@ -364,12 +344,13 @@ main, .footer {
     border-radius: 1rem;
     color: black;
     padding: 3rem;
-    text-align: left; }
+    text-align: left;
+    font-size: 2rem; }
   .about-snippet__image {
     border-radius: 1rem;
-    width: 100%;
+    margin: auto;
     max-width: 36rem;
-    margin: auto; }
+    width: 100%; }
   @media (min-width: 768px) {
     .about-snippet {
       flex-direction: row; }
@@ -377,7 +358,7 @@ main, .footer {
         flex-direction: row-reverse; } }
   @media (min-width: 992px) {
     .about-snippet__content {
-      padding: 6rem; } }
+      padding: 5rem; } }
 
 .services {
   border-radius: 1rem;

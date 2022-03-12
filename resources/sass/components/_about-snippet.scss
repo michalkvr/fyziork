@@ -10,13 +10,14 @@
     color: black;
     padding: 3rem;
     text-align: left;
+    font-size: 2rem;
   }
 
   &__image {
     border-radius: 1rem;
-    width: 100%;
-    max-width: 36rem;
     margin: auto;
+    max-width: 36rem;
+    width: 100%;
   }
 
   @media (min-width: map-get($grid-breakpoints, 'md')) {
@@ -29,7 +30,7 @@
 
   @media (min-width: map-get($grid-breakpoints, 'lg')) {
     &__content {
-      padding: 6rem;
+      padding: 5rem;
     }
   }
 }
