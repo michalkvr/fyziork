@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
     <title>Fyzioterapie - Roman Kovář</title>
     <link
       rel="stylesheet"
@@ -15,21 +16,22 @@
     />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <link rel="icon" href="icon.ico" type="image/icon type" />
   </head>
   <body>
     <header class="header">
-      <a href="./" class="header__logo">fyzioRK</a>
+      <a href="#hero" class="header__logo">fyzioRK</a>
       <nav class="nav">
-        <button class="nav__item">o mně</button>
-        <button class="nav__item">služby</button>
-        <button class="nav__item">reference</button>
-        <button class="nav__item">kontakt</button>
+        <a href="#about" class="nav__item">o mně</a>
+        <a href="#services" class="nav__item">služby</a>
+        <!-- <button class="nav__item">reference</button> -->
+        <a href="#contact" class="nav__item">kontakt</a>
       </nav>
     </header>
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <section id="hero" class="hero">
         <lottie-player
           class="hero__image"
           src="img/hero.json"
@@ -44,15 +46,15 @@
             <span class="hero__name">Roman Kovář</span>
           </h1>
           <div class="hero__buttons">
-            <button class="button button--primary">s čím vám pomohu</button>
-            <button class="button button--secondary">napište mi</button>
+            <a href="#services" class="button button--primary">s čím vám pomohu</a>
+            <a href="#contact" class="button button--secondary">napište mi</a>
           </div>
         </div>
       </section>
       <!-- END HERO -->
 
       <!-- O MNĚ -->
-      <section class="section section--primary">
+      <section id="about" class="section section--primary">
         <div class="container">
           <h2 class="section__title">Kdo jsem?</h2>
           <div class="about-snippet">
@@ -93,7 +95,6 @@
           <img src="img/slider/slider_03.jpg" class="swiper-slide" />
           <img src="img/slider/slider_04.jpg" class="swiper-slide" />
           <img src="img/slider/slider_05.jpg" class="swiper-slide" />
-          <img src="img/slider/slider_06.jpg" class="swiper-slide" />
         </div>
 
         <!-- If we need navigation buttons -->
@@ -103,7 +104,7 @@
       <!-- END GALERIE -->
 
       <!-- SLUŽBY -->
-      <section class="section">
+      <section id="services" class="section">
         <div class="container">
           <h2 class="section__title">S čím vám dokáži pomoci</h2>
           <div class="services">
@@ -132,6 +133,10 @@
               <span>Sportovní fyzioterapie</span>
             </article>
           </div>
+          <p class="services__price">
+            <i class="services__price-icon fa-solid fa-coins"></i>
+            Zařízení není smluvním partnerem žádné pojišťovny. Výkon je zpoplatněn sazbou: 700,- Kč / 50 minut.
+          </p>
         </div>
       </section>
       <!-- END SLUŽBY -->
@@ -145,7 +150,7 @@
       <!-- END REFERENCE -->
 
       <!-- KONTAKT -->
-      <section class="section--primary contact">
+      <section id="contact" class="section--primary contact">
         <div class="contact__info">
           <span class="contact__name">Bc. Roman Kovář</span>
           <a href="tel:+420607860710"><i class="contact__icon fa-solid fa-phone"></i>607 860 710</a>
