@@ -1,7 +1,8 @@
 .about-snippet {
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  grid-template-columns: 2fr auto;
 
   &__content {
     background-color: white;
@@ -13,14 +14,17 @@
 
   &__image {
     border-radius: 1rem;
-    height: 50rem;  
+    width: 100%;
+    max-width: 36rem;
     margin: auto;
-    
   }
 
   @media (min-width: map-get($grid-breakpoints, 'md')) {
-    gap: 2rem;
-    grid-template-columns: 2fr auto;
+    flex-direction: row;
+
+    &--reversed {
+      flex-direction: row-reverse;
+    }
   }
 
   @media (min-width: map-get($grid-breakpoints, 'lg')) {

@@ -1,18 +1,18 @@
 .hero {
-  height: 97vh;
-  display: flex;
   align-items: center;
-
+  display: flex;
+  justify-content: center;
+  padding: 25rem 0.8rem 15rem;
   &__image {
-    margin-top: 7rem;
-    width: 50%;
+    display: none;
   }
 
   &__content {
-    display: flex;
-    justify-content: right;
     align-items: flex-start;
+    display: flex;
     flex-direction: column;
+    justify-content: right;
+    text-align: center;
   }
 
   &__heading {
@@ -23,17 +23,63 @@
   }
 
   &__title {
-    font-size: 6rem;
+    font-size: 3rem;
     margin-left: .2rem;
   }
 
   &__name {
-    font-size: 9rem;
+    font-size: 5rem;
   }
 
   &__buttons {
-    margin-top: 4rem;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    height: 97vh;
+    max-height: 110rem;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    &__title {
+      font-size: 4rem;
+      margin-left: .2rem;
+    }
+
+    &__content {
+      text-align: left;
+    }
+
+    &__name {
+      font-size: 7rem;
+    }
+
+    &__image {
+      display: block;
+      margin-top: 7rem;
+      padding-right: 5rem;
+      width: 30%;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      justify-content: left;
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    &__title {
+      font-size: 6rem;
+      margin-left: .2rem;
+    }
+
+    &__name {
+      font-size: 9rem;
+    }
   }
 }

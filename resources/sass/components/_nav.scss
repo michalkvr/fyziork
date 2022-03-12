@@ -3,17 +3,28 @@
   display: flex;
   flex-direction: row;
   font-family: $font-mulish;
-  gap: 5em;
+  justify-content: space-around;
+  width: 100%;
   
   &__item {
-    letter-spacing: .15rem;
-    font-size: 1.7rem;
-    padding: .7rem 0;
     border-bottom: 2px solid $color-primary;
+    font-size: 1.7rem;
+    letter-spacing: .15rem;
     transition: all .2s ease-in-out;
 
-    &:hover {
-      border-bottom-color: white;
+    @media (hover: hover) {
+      &:hover {
+        border-bottom-color: white;
+      }
+    } 
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    gap: 5rem;
+    width: auto;
+
+    &__item {
+      padding: .7rem 0;
     }
   }
 }

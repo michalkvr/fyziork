@@ -4,9 +4,10 @@
   border-bottom: 2px solid white;
   box-sizing: border-box;
   display: flex;
-  height: 8rem;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 0 5rem;
+  min-height: 8rem;
+  padding: 2rem 1rem;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -15,5 +16,12 @@
     color: white;
     font-family: $font-nothing;
     font-size: 4rem;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0rem;
+    padding: 1rem 5rem;
   }
 }

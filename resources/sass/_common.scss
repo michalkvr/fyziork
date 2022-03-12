@@ -1,5 +1,6 @@
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   body {
     font-family: $font-mulish;
@@ -55,8 +56,8 @@ main, .footer {
 .button {
   border-radius: 1rem;
   border: 3px solid $color-primary;
-  font-size: 2rem;
-  padding: 2rem 4rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
   transition: all .1s ease; 
 
   &--primary {
@@ -68,8 +69,15 @@ main, .footer {
     color: $color-primary;
   }
 
-  &:hover {
-    transform: scale(105%);
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(105%);
+    }
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    font-size: 2rem;
+    padding: 2rem 4rem;
   }
 }
 
@@ -78,7 +86,7 @@ main, .footer {
   text-align: center;
 
   &__title {
-    font-size: 5rem;
+    font-size: 3.6rem;
     margin-bottom: 2rem;
     margin-top: 7rem;
 
@@ -94,11 +102,17 @@ main, .footer {
   
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     text-align: left;
+
+    &__title {
+      font-size: 5rem;
+    }
   }
 }
 
 .swiper {
+  background: $color-primary;
   height: auto;
+  padding-top: 3rem;
   width: 100%;
 
   .swiper-button-prev, .swiper-button-next {
